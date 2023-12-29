@@ -5,12 +5,14 @@ import LargeHeading from '@/components/ui/LargeHeading';
 import Paragraph from '@/components/ui/Paragraph';
 import DocumentationTabs from '@/components/DocumentationTabs';
 
+import 'simplebar-react/dist/simplebar.min.css'
+
 const metadata: Metadata = {
   title: 'Similarity API | Documentation',
-  description: 'Free & Open-source Text Similarity API'
+  description: 'Free & Open-source API'
 }
 
-const page: FC = ({
+const Documentation: FC = ({
 
 }) => {
   return (
@@ -29,6 +31,6 @@ const page: FC = ({
   )
 }
 
-export default page
+export default Documentation
 
 export { metadata }
