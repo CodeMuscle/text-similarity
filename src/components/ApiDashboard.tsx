@@ -6,6 +6,8 @@ import { formatDistance } from 'date-fns';
 import LargeHeading from '@/ui/LargeHeading';
 import Paragraph from '@/ui/Paragraph';
 import { Input } from '@/ui/Input';
+import Table from '@/ui/Table';
+import ApiKeyOptions from './ApiKeyOptions';
 
 const ApiDashboard = async({}) => {
 
@@ -48,13 +50,14 @@ const ApiDashboard = async({}) => {
         <Input className='w-fit truncate' readOnly value={activeApiKey.key} />
 
         {/* TODO: Add Options to create/revoke */}
+        <ApiKeyOptions apiKeyCopy={activeApiKey.key} apiKeyId={activeApiKey.id} />
       </div>
 
       <Paragraph className="text-center md:text-left mt-4 -mb-4">
         Your API history:
       </Paragraph>
 
-      {/* <Table /> */}
+      <Table userRequests={serializableRequests} />
 
     </div>
   )

@@ -1,10 +1,11 @@
 import { getServerSession } from "next-auth"
 import Link from "next/link";
-import SignInButton from "@/components/SignInButton";
-import { buttonVariants } from "@/ui/Button";
-import SignOutButton from "@/components/SignOutButton";
 import ThemeToggle from "@/components/ThemeToggle";
 import { authOptions } from "@/lib/auth";
+
+import SignInButton from "@/components/SignInButton";
+import SignOutButton from "@/components/SignOutButton";
+import { buttonVariants } from "@/ui/Button";
 
 
 const Navbar = async({}) => {

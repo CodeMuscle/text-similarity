@@ -5,11 +5,7 @@ import { FC, useState } from 'react'
 import Button from '@/ui/Button';
 import { toast } from './ui/toast';
 
-interface SignOutButtonProps {
-  
-}
-
-const SignOutButton: FC<SignOutButtonProps> = ({}) => {
+const SignOutButton: FC = ({}) => {
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -30,7 +26,7 @@ const SignOutButton: FC<SignOutButtonProps> = ({}) => {
 
   return (  
     <Button onClick={signUserOut} isLoading={isLoading}>
-        Sign in
+        Sign out
     </Button>
   )
 }
