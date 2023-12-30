@@ -16,4 +16,6 @@ We use OpenAI to to turn text into an array of vectors and then their mathematic
 - Super fast Planetscale database
 - A complete API key system to create & revoke user keys
 
-## Live URL: https://www.similarityapi.com/
+##
+
+### Live URL: https://www.similarityapi.com/
